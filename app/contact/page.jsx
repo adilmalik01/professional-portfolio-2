@@ -13,17 +13,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+1) 786 825 4670",
+    description: "+92 3001355235",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "solarluiso@gmail.com",
+    description: "malikadil5679@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Location",
-    description: "Washington, DC",
+    description: "Karachi, PK",
   },
 ];
 

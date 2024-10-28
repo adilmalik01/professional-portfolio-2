@@ -31,9 +31,9 @@ const projects = [
       { name: "Tailwind CSS" },
       { name: "Framer-Motion" },
     ],
-    image: "/assets/projects/thumb1.png",
-    live: "https://focus-inky.vercel.app/",
-    github: "https://github.com/solarluiso/focus",
+    image: "/assets/projects/e-commerce.png",
+    live: "https://github.com/adilmalik01/E-commerce-Frontend",
+    github: "https://e-commerce-web-app-delta.vercel.app/",
   },
   {
     num: "02",
