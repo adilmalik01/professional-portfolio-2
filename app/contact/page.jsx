@@ -4,7 +4,6 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
-// components
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -36,7 +35,6 @@ const Contact = () => {
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
       <div className="container mx-auto">
-        {/* message */}
         <div className="flex flex-col justify-center items-center gap-2 pb-[30px] xl:mb-8">
           <motion.h3
             variants={fadeIn("down", 0.4)}
@@ -59,7 +57,6 @@ const Contact = () => {
           </motion.p>
         </div>
         <div className="flex flex-col xl:flex-row items-center gap-[30px]">
-          {/* info */}
           <div className="w-full max-w-xl p-[100px] flex items-center justify-center rounded-xl xl:mb-0 border border-accent/10 border-dashed">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
@@ -79,18 +76,14 @@ const Contact = () => {
               })}
             </ul>
           </div>
-          {/* form */}
           <div className="w-full max-w-xl">
             <form className="flex flex-col gap-6 p-10 bg-secondary rounded-xl">
-              {/* input */}
               <Input type="name" placeholder="Your name" />
               <Input type="email" placeholder="Your email" />
-              {/* textarea */}
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here!"
               />
-              {/* btn */}
               <Button size="md" className="max-w-40 uppercase">
                 Send email
               </Button>

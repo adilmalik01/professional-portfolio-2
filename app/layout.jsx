@@ -20,7 +20,7 @@ const roboto = Roboto({
 export const metadata = {
   title: "Adil Malik - Developer Portfolio",
   description:
-    "Explore the portfolio of Luis Solar, a web developer showcasing his projects and expertise.",
+    "Explore the portfolio of Adil Malik, a web developer showcasing his projects and expertise.",
 };
 
 export default function RootLayout({ children }) {

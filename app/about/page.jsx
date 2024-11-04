@@ -23,7 +23,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-// about data
 const about = {
   title: "About me",
   description:
@@ -35,7 +34,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldValue: "1 Year",
     },
     {
       fieldName: "Phone",
@@ -57,7 +56,6 @@ const about = {
   ],
 };
 
-// skills data
 const skills = {
   title: "My skills",
   description:

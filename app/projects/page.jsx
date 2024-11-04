@@ -9,7 +9,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// components
 import {
   Tooltip,
   TooltipContent,
@@ -22,41 +21,110 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Fullstack",
     title: "Focus",
-    description:
-      "A sleek web application designed to enhance productivity and focus.",
+    description: "A productivity-boosting web app with sleek design and real-time features.",
     stack: [
-      { name: "Next.js" },
-      { name: "Tailwind CSS" },
-      { name: "Framer-Motion" },
+      { name: "ReactJS" },
+      { name: "Context API" },
+      { name: "Tailwind" },
+      { name: "ExpressJS" },
+      { name: "NodeJs" },
+      { name: "Socket.io" },
+      { name: "MongoDB" }
     ],
     image: "/assets/projects/e-commerce.png",
-    live: "https://github.com/adilmalik01/E-commerce-Frontend",
-    github: "https://e-commerce-web-app-delta.vercel.app/",
+    live: "https://e-commerce-web-app-delta.vercel.app/",
+    github: "https://github.com/adilmalik01/E-commerce-Frontend",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "Fit physique",
-    description: "A fitness-focused platform to track workouts and progress.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
-    image: "/assets/projects/thumb2.png",
-    live: "https://fitphysique-pi.vercel.app/",
-    github: "https://github.com/solarluiso/fitphysique",
+    category: "Frontend",
+    title: "FakeStore",
+    description: "An eCommerce app with product listings, cart, and checkout built using Next.js and TypeScript.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "shadcn/ui" },
+      { name: "Context API" }
+    ],
+    image: "/assets/projects/fake-store.png",
+    live: "https://fake-store-dynamic-routing-pmm1usc36-malik4.vercel.app/",
+    github: "https://github.com/adilmalik01/fake-store-dynamicRouting",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "Modern bank app",
-    description:
-      "An innovative banking application with a modern user interface.",
-    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Vite" }],
-    image: "/assets/projects/thumb3.png",
-    live: "https://modern-bank-app-ebon-omega.vercel.app/",
-    github: "https://github.com/solarluiso/modern-bank-app",
+    category: "Frontend",
+    title: "The Vehicle VIN",
+    description: "A VIN lookup tool with Next.js, providing car details with a responsive design.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "shadcn/ui" }
+    ],
+    image: "/assets/projects/vin.png",
+    live: "https://the-vehicle-vin.vercel.app/",
+    github: "https://github.com/adilmalik01/the-vehicle-vin",
   },
+  {
+    num: "04",
+    category: "Frontend",
+    title: "Resume Builder",
+    description: "A responsive app for building professional resumes using HTML, CSS, and TypeScript.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "TypeScript" }
+    ],
+    image: "/assets/projects/resume.png",
+    live: "https://resume-builder-malik4.vercel.app/",
+    github: "https://github.com/adilmalik01/Resume-Builder",
+  },
+  {
+    num: "05",
+    category: "Fullstack",
+    title: "Django Blogging Website",
+    description: "A blogging platform with CRUD functionality and image uploads, built using Django.",
+    stack: [
+      { name: "Django" },
+      { name: "SQLite" }
+    ],
+    image: "/assets/projects/django.png",
+    live: "https://github.com/adilmalik01/django-firstApp",
+    github: "https://github.com/adilmalik01/django-firstApp",
+  },
+  {
+    num: "06",
+    category: "Frontend",
+    title: "REJOICE",
+    description: "A responsive website with smooth animations powered by GSAP, built with HTML, CSS, and JavaScript.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "GSAP" }
+    ],
+    image: "/assets/projects/rejouice.png",
+    live: "https://adilmalik01.github.io/REJOICE-WEBSITE/",
+    github: "https://github.com/adilmalik01/REJOICE-WEBSITE",
+  },
+  {
+    num: "07",
+    category: "Frontend",
+    title: "Adii Notes",
+    description: "A note-taking app with CRUD and search functionality, built with HTML, CSS, JavaScript, and Bootstrap.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "Bootstrap" }
+    ],
+    image: "/assets/projects/adii-notes.png",
+    live: "https://adilmalik01.github.io/Adii-Notes/",
+    github: "https://github.com/adilmalik01/Adii-Notes",
+  }
 ];
+
 
 const Projects = () => {
   const [project, setProject] = useState(projects[0]);
@@ -85,20 +153,16 @@ const Projects = () => {
                 {project.num}
               </div>
               <div className="flex flex-col gap-4">
-                {/* project category */}
                 <h3 className="h3">{project.category} project</h3>
-                {/* project description */}
                 <p className="p text-xl">{project.description}</p>
-                {/* stack */}
-                <ul className="flex gap-4">
+                <ul className="flex gap-2  flex-wrap">
                   {project.stack.map((item, index) => {
                     return (
                       <li
                         key={index}
-                        className="text-md xl:text-lg text-accent"
+                        className="text-sm xl:text-lg text-accent"
                       >
                         {item.name}
-                        {/* remove the last comma */}
                         {index !== project.stack.length - 1 && ","}
                       </li>
                     );
@@ -106,11 +170,8 @@ const Projects = () => {
                 </ul>
               </div>
 
-              {/* border */}
               <div className="border border-white/20"></div>
-              {/* buttons */}
               <div className="flex items-center gap-4">
-                {/* live project button */}
                 <Link
                   href={project.live}
                   target="_blank"
@@ -127,7 +188,6 @@ const Projects = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                {/* github button */}
                 <Link
                   href={project.github}
                   target="_blank"
@@ -147,7 +207,6 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* photo */}
           <div className="w-full max-w-[536px]">
             <Swiper
               spaceBetween={30}
@@ -159,9 +218,7 @@ const Projects = () => {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[302px] relative group flex justify-center items-center bg-pink-50/20">
-                      {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
-                      {/* image */}
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
@@ -175,7 +232,6 @@ const Projects = () => {
                   </SwiperSlide>
                 );
               })}
-              {/* slider buttons */}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
