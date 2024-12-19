@@ -1,9 +1,7 @@
-# Luis Solar - Developer Portfolio
+#Adil Malik - Developer Portfolio
 
 This repository contains the code of my personal portfolio website showcasing projects, skills, and expertise as a web developer.
 The README.md file provides an overview of the project and instructions on how to set it up and customize it for your own use.
-
-![Demo](https://github.com/solarluiso/solarluiso-portfolio/blob/master/public/assets/demo.png)
 
 ## Table of Contents
 
@@ -35,11 +33,11 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone this repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/solarluiso/solarluiso-portfolio.git
+   git clone https://github.com/adilmalik01/professional-portfolio-2.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd solarluiso-portfolio
+   cd professional-portfolio-2
    ```
 3. Install dependencies:
 
@@ -94,7 +92,7 @@ These meta tags are included to improve search engine visibility and provide a c
 
 ## Deployment
 
-The portfolio is live and accessible at https://solarluiso-portfolio.vercel.app.
+The portfolio is live and accessible at https://professional-portfolio-2.vercel.app.
 
 You can view and manage the deployment settings on Vercel Dashboard.
 
